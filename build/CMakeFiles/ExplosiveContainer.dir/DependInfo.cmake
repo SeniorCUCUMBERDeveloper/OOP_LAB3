@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp" "CMakeFiles/ExplosiveContainer.dir/Container/Container.cpp.o" "gcc" "CMakeFiles/ExplosiveContainer.dir/Container/Container.cpp.o.d"
-  "/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/ExplosiveContainer.cpp" "CMakeFiles/ExplosiveContainer.dir/Container/ExplosiveContainer.cpp.o" "gcc" "CMakeFiles/ExplosiveContainer.dir/Container/ExplosiveContainer.cpp.o.d"
+  "/home/kali/git/Container/Container.cpp" "CMakeFiles/ExplosiveContainer.dir/Container/Container.cpp.o" "gcc" "CMakeFiles/ExplosiveContainer.dir/Container/Container.cpp.o.d"
+  "/home/kali/git/Container/ExplosiveContainer.cpp" "CMakeFiles/ExplosiveContainer.dir/Container/ExplosiveContainer.cpp.o" "gcc" "CMakeFiles/ExplosiveContainer.dir/Container/ExplosiveContainer.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

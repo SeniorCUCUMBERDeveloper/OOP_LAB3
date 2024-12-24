@@ -1,8 +1,7 @@
 CMakeFiles/StorageManagement.dir/Storage/Storage.cpp.o: \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.cpp \
- /usr/include/stdc-predef.h \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.hpp \
- /usr/include/c++/14/thread /usr/include/c++/14/bits/requires_hosted.h \
+ /home/kali/git/Storage/Storage.cpp /usr/include/stdc-predef.h \
+ /home/kali/git/Storage/Storage.hpp /usr/include/c++/14/thread \
+ /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -204,7 +203,7 @@ CMakeFiles/StorageManagement.dir/Storage/Storage.cpp.o: \
  /usr/include/c++/14/bits/unique_lock.h /usr/include/c++/14/shared_mutex \
  /usr/include/c++/14/iostream /usr/include/c++/14/istream \
  /usr/include/c++/14/bits/istream.tcc \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/../Octree/Octree.hpp \
+ /home/kali/git/Storage/../Octree/Octree.hpp \
  /usr/include/c++/14/algorithm /usr/include/c++/14/bits/stl_algo.h \
  /usr/include/c++/14/bits/algorithmfwd.h \
  /usr/include/c++/14/bits/stl_heap.h \
@@ -214,9 +213,8 @@ CMakeFiles/StorageManagement.dir/Storage/Storage.cpp.o: \
  /usr/include/c++/14/bits/ranges_algobase.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/../Octree/ContainerPosition.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/../Octree/Point.hpp \
- /usr/include/c++/14/memory \
+ /home/kali/git/Storage/../Octree/ContainerPosition.hpp \
+ /home/kali/git/Storage/../Octree/Point.hpp /usr/include/c++/14/memory \
  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
  /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/shared_ptr.h \
  /usr/include/c++/14/bits/shared_ptr_base.h \
@@ -251,19 +249,19 @@ CMakeFiles/StorageManagement.dir/Storage/Storage.cpp.o: \
  /usr/include/c++/14/bits/regex.h /usr/include/c++/14/bits/regex.tcc \
  /usr/include/c++/14/bits/regex_executor.h \
  /usr/include/c++/14/bits/regex_executor.tcc \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/../Checker/Checker.hpp \
+ /home/kali/git/Storage/../Checker/Checker.hpp \
  /usr/include/c++/14/functional /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
  /usr/include/c++/14/bits/hashtable.h \
  /usr/include/c++/14/bits/hashtable_policy.h \
  /usr/include/c++/14/bits/enable_special_members.h \
  /usr/include/c++/14/bits/erase_if.h /usr/include/c++/14/array \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/../Checker/../Container/Container.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/../Checker/../Container/./I/IContainer.hpp \
+ /home/kali/git/Storage/../Checker/../Container/Container.hpp \
+ /home/kali/git/Storage/../Checker/../Container/./I/IContainer.hpp \
  /usr/include/c++/14/condition_variable \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/../Container/I/IFragile.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/../Container/I/IContainer.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/../Container/I/IRefragedContainer.hpp \
+ /home/kali/git/Storage/../Container/I/IFragile.hpp \
+ /home/kali/git/Storage/../Container/I/IContainer.hpp \
+ /home/kali/git/Storage/../Container/I/IRefragedContainer.hpp \
  /usr/include/c++/14/numeric /usr/include/c++/14/bits/stl_numeric.h \
  /usr/include/c++/14/pstl/glue_numeric_defs.h /usr/include/c++/14/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \

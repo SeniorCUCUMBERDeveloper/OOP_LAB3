@@ -1,8 +1,7 @@
 CMakeFiles/Container.dir/Container/Container.cpp.o: \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp \
- /usr/include/stdc-predef.h \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.hpp \
- /usr/include/c++/14/iostream /usr/include/c++/14/bits/requires_hosted.h \
+ /home/kali/git/Container/Container.cpp /usr/include/stdc-predef.h \
+ /home/kali/git/Container/Container.hpp /usr/include/c++/14/iostream \
+ /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -200,7 +199,7 @@ CMakeFiles/Container.dir/Container/Container.cpp.o: \
  /usr/include/c++/14/bits/ranges_algobase.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/./I/IContainer.hpp \
- /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_vector.h \
+ /home/kali/git/Container/./I/IContainer.hpp /usr/include/c++/14/vector \
+ /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc

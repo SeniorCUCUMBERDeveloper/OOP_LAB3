@@ -1,4 +1,4 @@
-# Install script for directory: /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel
+# Install script for directory: /home/kali/git
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -57,6 +57,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/kali/git/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

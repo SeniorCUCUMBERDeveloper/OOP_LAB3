@@ -1,8 +1,8 @@
-/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles/Container.dir
-/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles/ExplosiveContainer.dir
-/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles/FragAndRef.dir
-/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles/FragileContainer.dir
-/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles/RefragedContainer.dir
-/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles/StorageManagement.dir
-/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles/edit_cache.dir
-/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles/rebuild_cache.dir
+/home/kali/git/build/CMakeFiles/Container.dir
+/home/kali/git/build/CMakeFiles/ExplosiveContainer.dir
+/home/kali/git/build/CMakeFiles/FragAndRef.dir
+/home/kali/git/build/CMakeFiles/FragileContainer.dir
+/home/kali/git/build/CMakeFiles/RefragedContainer.dir
+/home/kali/git/build/CMakeFiles/StorageManagement.dir
+/home/kali/git/build/CMakeFiles/edit_cache.dir
+/home/kali/git/build/CMakeFiles/rebuild_cache.dir

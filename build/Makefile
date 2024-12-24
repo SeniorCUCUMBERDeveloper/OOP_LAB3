@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel
+CMAKE_SOURCE_DIR = /home/kali/git
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build
+CMAKE_BINARY_DIR = /home/kali/git/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles /home/kali/git/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
