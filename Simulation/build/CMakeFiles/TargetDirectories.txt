@@ -1,0 +1,3 @@
+/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Simulation/build/CMakeFiles/StorageSimulation.dir
+/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Simulation/build/CMakeFiles/edit_cache.dir
+/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Simulation/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles/myprog.dir
+/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles/edit_cache.dir
+/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles/rebuild_cache.dir
