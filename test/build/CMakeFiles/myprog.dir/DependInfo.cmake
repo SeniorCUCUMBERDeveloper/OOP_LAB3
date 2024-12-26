@@ -8,6 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp" "CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o" "gcc" "CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o.d"
+  "/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp" "CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o" "gcc" "CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o.d"
+  "/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp" "CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o" "gcc" "CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o.d"
+  "/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp" "CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o" "gcc" "CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o.d"
   "/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.cpp" "CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.cpp.o" "gcc" "CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.cpp.o.d"
   "/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/Terminal.cpp" "CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/Terminal.cpp.o" "gcc" "CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/Terminal.cpp.o.d"
   "/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/test.cpp" "CMakeFiles/myprog.dir/test.cpp.o" "gcc" "CMakeFiles/myprog.dir/test.cpp.o.d"

@@ -2,12 +2,15 @@
 #define STORAGECONTROLLER_HPP
 
 #include "../Storage/Storage.hpp"
+#include "../Container/LibraryManager/LibraryManager.hpp"
 #include "view.hpp"
 
 class StorageController {
 public:
     StorageController(Storage &storage, StorageView &view) 
-        : storage(storage), view(view) {}
+        : storage(storage), view(view) {
+            loadCheckFunctions();
+        }
 
     void addContainer() {
         auto container = view.promptAddContainer();
@@ -75,6 +78,7 @@ public:
 private:
     Storage &storage;
     StorageView &view;
+    
 
 
     std::shared_ptr<IContainer> selectContainer() {
@@ -101,7 +105,7 @@ private:
             }
             
             char input;
-            view.displayMessage("Use arrow keys to navigate (up: 'w', down: 's', select: 'Enter', cancel: 'q'): ");
+            view.displayMessage("Use arrow keys to navigate (up: 'w', down: 's', select: 'e', cancel: 'q'): ");
             std::cin >> input;
 
             if (input == 'w') {
@@ -127,6 +131,16 @@ private:
         }
 
         return nullptr;
+    }
+
+    void loadCheckFunctions() {
+        std::vector<std::string> checkFunctions = {"checkAnimalContainer", "checkExplosiveContainer"};
+        for(auto func : checkFunctions){
+            auto checkFunctions = view.libraryManager.getCheckFunctions(func.c_str());
+            for (auto checkFunc : checkFunctions) {
+                storage.addExternalCheckFunction(checkFunc);
+            }
+        }
     }
 };
 

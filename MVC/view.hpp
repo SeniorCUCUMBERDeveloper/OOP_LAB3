@@ -6,14 +6,16 @@
 #include <string>
 #include <memory>
 #include "../Storage/Storage.hpp"
-#include "../Container/RefragedContainer.hpp"
-#include "../Container/Container.hpp"
-#include "../Container/FragileContainer.hpp"
-#include "../Container/Frag_and_Ref.hpp"
+#include "../Container/AnimalContainer.hpp"
+#include "../Container/ExplosiveContainer.hpp"
+
 
 
 class StorageView {
 public:
+    StorageView(const std::string& libDirectory) : libraryManager(libDirectory) {}
+    ~StorageView() {}
+
     void displayStorageInfo(const Storage& storage) {
         std::cout << "Storage Information:\n";
         std::cout << "Dimensions: " << std::to_string(storage.getLength()) << " x " 
@@ -45,23 +47,59 @@ public:
     }
 
 
+    
     std::shared_ptr<IContainer> promptAddContainer() {
-        std::string id, name;
+        std::string id, client;
         std::cout << "Enter container ID: ";
         std::cin >> id;
         std::cout << "Enter owner name: ";
-        std::cin >> name;
+        std::cin >> client;
 
         std::cout << "Choose container type:\n";
         std::cout << "1. Regular container\n";
         std::cout << "2. Fragile container\n";
         std::cout << "3. Refrigerated container\n";
         std::cout << "4. Fragile refrigerated container\n";
+        std::cout << "5. Explosive container\n";
+        std::cout << "6. Explosive container\n";
         int type;
         std::cin >> type;
 
+        using CreateContainerFunc = IContainer* (*)(std::string, std::string, int, int, int, double, double, double, double);
+        CreateContainerFunc createFunc = nullptr;
+
+        switch (type) {
+            case 1:
+                createFunc = libraryManager.getCreateFunction<CreateContainerFunc>("createRegularContainer");
+                break;
+            case 2:
+                createFunc = libraryManager.getCreateFunction<CreateContainerFunc>("createFragileContainer");
+                break;
+            case 3:
+                createFunc = libraryManager.getCreateFunction<CreateContainerFunc>("createRefrigeratedContainer");
+                break;
+            case 4:
+                createFunc = libraryManager.getCreateFunction<CreateContainerFunc>("createFragileRefrigeratedContainer");
+                break;
+            case 5:
+                createFunc = libraryManager.getCreateFunction<CreateContainerFunc>("createExplosiveContainer");
+                break;
+            case 6:
+                createFunc = libraryManager.getCreateFunction<CreateContainerFunc>("createAnimalContainer");
+                break;
+            default:
+                std::cout << "Invalid container type. Container not added.\n";
+                return nullptr;
+        }
+
+        if (!createFunc) {
+            std::cout << "Error: unable to get create function for the selected container type.\n";
+            return nullptr;
+        }
+
+        
         int length, width, height;
-        double cost, mass;
+        double cost, mass, maxPressure = 0.0, maxTemperature = 0.0;
 
         std::cout << "Enter length: ";
         std::cin >> length;
@@ -74,33 +112,20 @@ public:
         std::cout << "Enter mass: ";
         std::cin >> mass;
 
-        switch (type) {
-            case 1:
-                return std::make_shared<Container>(id, name, length, width, height, cost, mass);
-            case 2: {
-                double maxPressure;
-                std::cout << "Enter maximum pressure: ";
-                std::cin >> maxPressure;
-                return std::make_shared<FragileContainer>(id, name, length, width, height, cost, mass, maxPressure);
-            }
-            case 3: {
-                double maxTemperature;
-                std::cout << "Enter maximum temperature: ";
-                std::cin >> maxTemperature;
-                return std::make_shared<RefragedContainer>(id, name, length, width, height, cost, mass, maxTemperature);
-            }
-            case 4: {
-                double maxPressure, maxTemperature;
-                std::cout << "Enter maximum pressure: ";
-                std::cin >> maxPressure;
-                std::cout << "Enter maximum temperature: ";
-                std::cin >> maxTemperature;
-                return std::make_shared<FragileRefragedContainer>(id, name, length, width, height, cost, mass, maxPressure, maxTemperature);
-            }
-            default:
-                std::cout << "Invalid container type. Container not added.\n";
-                return nullptr;
+        if (type == 2 || type == 4) { 
+            std::cout << "Enter maximum pressure: ";
+            std::cin >> maxPressure;
         }
+
+        if (type == 3 || type == 4 || type == 6) { 
+            std::cout << "Enter maximum temperature: ";
+            std::cin >> maxTemperature;
+        }
+        
+        std::shared_ptr<IContainer> container(
+            createFunc(id, client, length, width, height, cost, mass, maxPressure, maxTemperature)
+        );
+        return container;
     }
 
     
@@ -121,9 +146,79 @@ public:
         std::cin >> method;
     }
 
+    void promptStorage(int& id, int& length, int& width, int& height, double& temperature){
+        std::cout << "Enter Storage ID: ";
+        std::cin >> id;
+        std::cout << "Enter Storage Length: ";
+        std::cin >> length;
+        std::cout << "Enter Storage Width: ";
+        std::cin >> width;
+        std::cout << "Enter Storage Height: ";
+        std::cin >> height;
+        std::cout << "Enter Storage Temperature: ";
+        std::cin >> temperature;
+    }
+
 
     void displayMessage(const std::string &message) {
         std::cout << message;
+    }
+    
+    LibraryManager libraryManager;
+
+    int selectOperation() {
+        int selectedIndex = 0;
+        const std::vector<std::string> operations = {
+            "Add container",
+            "Add container with XYZ coordinates",
+            "Remove container",
+            "Move container",
+            "Rotate container",
+            "Show all containers",
+            "Show storage information",
+            "Exit"
+        };
+        int totalOperations = operations.size();
+
+        while (true) {
+
+            // std::cout << "\033[2J\033[1;1H";
+            // std::cout << "--- Storage Management Menu ---\n";
+            
+            for (int i = 0; i < operations.size(); ++i) {
+                if (i == selectedIndex) {
+                    std::cout << "> ";
+                } else {
+                    std::cout << "  ";
+                }
+                std::cout << operations[i] << "\n";
+            }
+            
+            char input;
+            std::cout << "Use arrow keys to navigate (up: 'w', down: 's', select: 'e', cancel: 'q'): ";
+            std::cin >> input;
+            
+            if (input == 'w') {
+                if(selectedIndex > 0){
+                    selectedIndex--;
+                }else{
+                    selectedIndex = totalOperations - 1;
+                }
+            } else if (input == 's') {
+                if (selectedIndex < totalOperations - 1) {
+                    selectedIndex++;
+                } else {
+                    selectedIndex = 0;
+                }
+            } else if (input == 'e') {
+                return selectedIndex;
+            } else if (input == 'q') {
+                std::cout << "Exiting.\n";
+                return -1;
+            } else {
+                std::cout << "Invalid input. Please use 'w', 's', 'e' or 'q'.\n";
+            }
+        }
     }
 };
 

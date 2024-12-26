@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel
+CMAKE_SOURCE_DIR = /home/kali/git
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build
+CMAKE_BINARY_DIR = /home/kali/git/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles /home/kali/git/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,6 +117,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Container
+
+# Build rule for target.
+Container: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Container
+.PHONY : Container
+
+# fast build rule for target.
+Container/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/build
+.PHONY : Container/fast
+
+#=============================================================================
+# Target rules for targets named ExplosiveContainer
+
+# Build rule for target.
+ExplosiveContainer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExplosiveContainer
+.PHONY : ExplosiveContainer
+
+# fast build rule for target.
+ExplosiveContainer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExplosiveContainer.dir/build.make CMakeFiles/ExplosiveContainer.dir/build
+.PHONY : ExplosiveContainer/fast
+
+#=============================================================================
+# Target rules for targets named FragAndRef
+
+# Build rule for target.
+FragAndRef: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FragAndRef
+.PHONY : FragAndRef
+
+# fast build rule for target.
+FragAndRef/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragAndRef.dir/build.make CMakeFiles/FragAndRef.dir/build
+.PHONY : FragAndRef/fast
+
+#=============================================================================
+# Target rules for targets named FragileContainer
+
+# Build rule for target.
+FragileContainer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FragileContainer
+.PHONY : FragileContainer
+
+# fast build rule for target.
+FragileContainer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragileContainer.dir/build.make CMakeFiles/FragileContainer.dir/build
+.PHONY : FragileContainer/fast
+
+#=============================================================================
+# Target rules for targets named RefragedContainer
+
+# Build rule for target.
+RefragedContainer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RefragedContainer
+.PHONY : RefragedContainer
+
+# fast build rule for target.
+RefragedContainer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RefragedContainer.dir/build.make CMakeFiles/RefragedContainer.dir/build
+.PHONY : RefragedContainer/fast
+
+#=============================================================================
 # Target rules for targets named StorageManagement
 
 # Build rule for target.
@@ -128,6 +193,165 @@ StorageManagement: cmake_check_build_system
 StorageManagement/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StorageManagement.dir/build.make CMakeFiles/StorageManagement.dir/build
 .PHONY : StorageManagement/fast
+
+Container/AnimalContainer.o: Container/AnimalContainer.cpp.o
+.PHONY : Container/AnimalContainer.o
+
+# target to build an object file
+Container/AnimalContainer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/AnimalContainer.cpp.o
+.PHONY : Container/AnimalContainer.cpp.o
+
+Container/AnimalContainer.i: Container/AnimalContainer.cpp.i
+.PHONY : Container/AnimalContainer.i
+
+# target to preprocess a source file
+Container/AnimalContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/AnimalContainer.cpp.i
+.PHONY : Container/AnimalContainer.cpp.i
+
+Container/AnimalContainer.s: Container/AnimalContainer.cpp.s
+.PHONY : Container/AnimalContainer.s
+
+# target to generate assembly for a file
+Container/AnimalContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/AnimalContainer.cpp.s
+.PHONY : Container/AnimalContainer.cpp.s
+
+Container/Container.o: Container/Container.cpp.o
+.PHONY : Container/Container.o
+
+# target to build an object file
+Container/Container.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/Container.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExplosiveContainer.dir/build.make CMakeFiles/ExplosiveContainer.dir/Container/Container.cpp.o
+.PHONY : Container/Container.cpp.o
+
+Container/Container.i: Container/Container.cpp.i
+.PHONY : Container/Container.i
+
+# target to preprocess a source file
+Container/Container.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/Container.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExplosiveContainer.dir/build.make CMakeFiles/ExplosiveContainer.dir/Container/Container.cpp.i
+.PHONY : Container/Container.cpp.i
+
+Container/Container.s: Container/Container.cpp.s
+.PHONY : Container/Container.s
+
+# target to generate assembly for a file
+Container/Container.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/Container.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExplosiveContainer.dir/build.make CMakeFiles/ExplosiveContainer.dir/Container/Container.cpp.s
+.PHONY : Container/Container.cpp.s
+
+Container/ExplosiveContainer.o: Container/ExplosiveContainer.cpp.o
+.PHONY : Container/ExplosiveContainer.o
+
+# target to build an object file
+Container/ExplosiveContainer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/ExplosiveContainer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExplosiveContainer.dir/build.make CMakeFiles/ExplosiveContainer.dir/Container/ExplosiveContainer.cpp.o
+.PHONY : Container/ExplosiveContainer.cpp.o
+
+Container/ExplosiveContainer.i: Container/ExplosiveContainer.cpp.i
+.PHONY : Container/ExplosiveContainer.i
+
+# target to preprocess a source file
+Container/ExplosiveContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/ExplosiveContainer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExplosiveContainer.dir/build.make CMakeFiles/ExplosiveContainer.dir/Container/ExplosiveContainer.cpp.i
+.PHONY : Container/ExplosiveContainer.cpp.i
+
+Container/ExplosiveContainer.s: Container/ExplosiveContainer.cpp.s
+.PHONY : Container/ExplosiveContainer.s
+
+# target to generate assembly for a file
+Container/ExplosiveContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/ExplosiveContainer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExplosiveContainer.dir/build.make CMakeFiles/ExplosiveContainer.dir/Container/ExplosiveContainer.cpp.s
+.PHONY : Container/ExplosiveContainer.cpp.s
+
+Container/Frag_and_Ref.o: Container/Frag_and_Ref.cpp.o
+.PHONY : Container/Frag_and_Ref.o
+
+# target to build an object file
+Container/Frag_and_Ref.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/Frag_and_Ref.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragAndRef.dir/build.make CMakeFiles/FragAndRef.dir/Container/Frag_and_Ref.cpp.o
+.PHONY : Container/Frag_and_Ref.cpp.o
+
+Container/Frag_and_Ref.i: Container/Frag_and_Ref.cpp.i
+.PHONY : Container/Frag_and_Ref.i
+
+# target to preprocess a source file
+Container/Frag_and_Ref.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/Frag_and_Ref.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragAndRef.dir/build.make CMakeFiles/FragAndRef.dir/Container/Frag_and_Ref.cpp.i
+.PHONY : Container/Frag_and_Ref.cpp.i
+
+Container/Frag_and_Ref.s: Container/Frag_and_Ref.cpp.s
+.PHONY : Container/Frag_and_Ref.s
+
+# target to generate assembly for a file
+Container/Frag_and_Ref.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/Frag_and_Ref.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragAndRef.dir/build.make CMakeFiles/FragAndRef.dir/Container/Frag_and_Ref.cpp.s
+.PHONY : Container/Frag_and_Ref.cpp.s
+
+Container/FragileContainer.o: Container/FragileContainer.cpp.o
+.PHONY : Container/FragileContainer.o
+
+# target to build an object file
+Container/FragileContainer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/FragileContainer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragileContainer.dir/build.make CMakeFiles/FragileContainer.dir/Container/FragileContainer.cpp.o
+.PHONY : Container/FragileContainer.cpp.o
+
+Container/FragileContainer.i: Container/FragileContainer.cpp.i
+.PHONY : Container/FragileContainer.i
+
+# target to preprocess a source file
+Container/FragileContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/FragileContainer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragileContainer.dir/build.make CMakeFiles/FragileContainer.dir/Container/FragileContainer.cpp.i
+.PHONY : Container/FragileContainer.cpp.i
+
+Container/FragileContainer.s: Container/FragileContainer.cpp.s
+.PHONY : Container/FragileContainer.s
+
+# target to generate assembly for a file
+Container/FragileContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/FragileContainer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragileContainer.dir/build.make CMakeFiles/FragileContainer.dir/Container/FragileContainer.cpp.s
+.PHONY : Container/FragileContainer.cpp.s
+
+Container/RefragedContainer.o: Container/RefragedContainer.cpp.o
+.PHONY : Container/RefragedContainer.o
+
+# target to build an object file
+Container/RefragedContainer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/RefragedContainer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RefragedContainer.dir/build.make CMakeFiles/RefragedContainer.dir/Container/RefragedContainer.cpp.o
+.PHONY : Container/RefragedContainer.cpp.o
+
+Container/RefragedContainer.i: Container/RefragedContainer.cpp.i
+.PHONY : Container/RefragedContainer.i
+
+# target to preprocess a source file
+Container/RefragedContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/RefragedContainer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RefragedContainer.dir/build.make CMakeFiles/RefragedContainer.dir/Container/RefragedContainer.cpp.i
+.PHONY : Container/RefragedContainer.cpp.i
+
+Container/RefragedContainer.s: Container/RefragedContainer.cpp.s
+.PHONY : Container/RefragedContainer.s
+
+# target to generate assembly for a file
+Container/RefragedContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/RefragedContainer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RefragedContainer.dir/build.make CMakeFiles/RefragedContainer.dir/Container/RefragedContainer.cpp.s
+.PHONY : Container/RefragedContainer.cpp.s
 
 Storage/Storage.o: Storage/Storage.cpp.o
 .PHONY : Storage/Storage.o
@@ -185,7 +409,30 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Container"
+	@echo "... ExplosiveContainer"
+	@echo "... FragAndRef"
+	@echo "... FragileContainer"
+	@echo "... RefragedContainer"
 	@echo "... StorageManagement"
+	@echo "... Container/AnimalContainer.o"
+	@echo "... Container/AnimalContainer.i"
+	@echo "... Container/AnimalContainer.s"
+	@echo "... Container/Container.o"
+	@echo "... Container/Container.i"
+	@echo "... Container/Container.s"
+	@echo "... Container/ExplosiveContainer.o"
+	@echo "... Container/ExplosiveContainer.i"
+	@echo "... Container/ExplosiveContainer.s"
+	@echo "... Container/Frag_and_Ref.o"
+	@echo "... Container/Frag_and_Ref.i"
+	@echo "... Container/Frag_and_Ref.s"
+	@echo "... Container/FragileContainer.o"
+	@echo "... Container/FragileContainer.i"
+	@echo "... Container/FragileContainer.s"
+	@echo "... Container/RefragedContainer.o"
+	@echo "... Container/RefragedContainer.i"
+	@echo "... Container/RefragedContainer.s"
 	@echo "... Storage/Storage.o"
 	@echo "... Storage/Storage.i"
 	@echo "... Storage/Storage.s"

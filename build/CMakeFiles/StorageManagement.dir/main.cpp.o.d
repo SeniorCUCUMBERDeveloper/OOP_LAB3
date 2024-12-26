@@ -1,5 +1,4 @@
-CMakeFiles/StorageManagement.dir/main.cpp.o: \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/main.cpp \
+CMakeFiles/StorageManagement.dir/main.cpp.o: /home/kali/git/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/14/iostream \
  /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
@@ -155,28 +154,13 @@ CMakeFiles/StorageManagement.dir/main.cpp.o: \
  /usr/include/c++/14/bits/locale_facets.tcc \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/controller.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Storage/Storage.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Storage/../Container/I/IContainer.hpp \
- /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_uninitialized.h \
- /usr/include/c++/14/bits/stl_vector.h \
- /usr/include/c++/14/bits/stl_bvector.h \
- /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/memory \
- /usr/include/c++/14/bits/stl_tempbuf.h \
- /usr/include/c++/14/bits/stl_raw_storage_iter.h \
- /usr/include/c++/14/bits/align.h \
+ /usr/include/c++/14/bits/istream.tcc /home/kali/git/./MVC/controller.hpp \
+ /home/kali/git/./MVC/../Storage/Storage.hpp /usr/include/c++/14/thread \
+ /usr/include/c++/14/stop_token /usr/include/c++/14/atomic \
+ /usr/include/c++/14/bits/atomic_base.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/14/bits/unique_ptr.h \
- /usr/include/c++/14/bits/shared_ptr.h \
- /usr/include/c++/14/bits/shared_ptr_base.h \
- /usr/include/c++/14/bits/allocated_ptr.h \
- /usr/include/c++/14/ext/aligned_buffer.h \
- /usr/include/c++/14/ext/concurrence.h \
- /usr/include/c++/14/bits/shared_ptr_atomic.h \
- /usr/include/c++/14/bits/atomic_base.h \
  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
  /usr/include/c++/14/bits/atomic_wait.h /usr/include/c++/14/cstdint \
  /usr/include/c++/14/climits \
@@ -200,13 +184,8 @@ CMakeFiles/StorageManagement.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h \
  /usr/include/c++/14/bits/std_mutex.h \
- /usr/include/c++/14/backward/auto_ptr.h \
- /usr/include/c++/14/bits/ranges_uninitialized.h \
- /usr/include/c++/14/bits/ranges_algobase.h \
- /usr/include/c++/14/pstl/glue_memory_defs.h \
- /usr/include/c++/14/pstl/execution_defs.h /usr/include/c++/14/thread \
- /usr/include/c++/14/stop_token /usr/include/c++/14/atomic \
- /usr/include/c++/14/bits/std_thread.h /usr/include/c++/14/semaphore \
+ /usr/include/c++/14/bits/std_thread.h \
+ /usr/include/c++/14/bits/unique_ptr.h /usr/include/c++/14/semaphore \
  /usr/include/c++/14/bits/semaphore_base.h \
  /usr/include/c++/14/bits/chrono.h /usr/include/c++/14/ratio \
  /usr/include/c++/14/limits /usr/include/c++/14/ctime \
@@ -214,23 +193,41 @@ CMakeFiles/StorageManagement.dir/main.cpp.o: \
  /usr/include/c++/14/bits/atomic_timed_wait.h \
  /usr/include/c++/14/bits/this_thread_sleep.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h /usr/include/c++/14/list \
- /usr/include/c++/14/bits/stl_list.h /usr/include/c++/14/bits/list.tcc \
- /usr/include/c++/14/mutex /usr/include/c++/14/bits/unique_lock.h \
- /usr/include/c++/14/shared_mutex \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Storage/../Octree/Octree.hpp \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_uninitialized.h \
+ /usr/include/c++/14/bits/stl_vector.h \
+ /usr/include/c++/14/bits/stl_bvector.h \
+ /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/list \
+ /usr/include/c++/14/bits/stl_list.h \
+ /usr/include/c++/14/bits/allocated_ptr.h \
+ /usr/include/c++/14/ext/aligned_buffer.h \
+ /usr/include/c++/14/bits/list.tcc /usr/include/c++/14/mutex \
+ /usr/include/c++/14/bits/unique_lock.h /usr/include/c++/14/shared_mutex \
+ /home/kali/git/./MVC/../Storage/../Octree/Octree.hpp \
  /usr/include/c++/14/algorithm /usr/include/c++/14/bits/stl_algo.h \
  /usr/include/c++/14/bits/algorithmfwd.h \
  /usr/include/c++/14/bits/stl_heap.h \
  /usr/include/c++/14/bits/uniform_int_dist.h \
+ /usr/include/c++/14/bits/stl_tempbuf.h \
  /usr/include/c++/14/bits/ranges_algo.h \
+ /usr/include/c++/14/bits/ranges_algobase.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Storage/../Octree/ContainerPosition.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Storage/../Octree/Point.hpp \
- /usr/include/c++/14/stack /usr/include/c++/14/deque \
- /usr/include/c++/14/bits/stl_deque.h /usr/include/c++/14/bits/deque.tcc \
- /usr/include/c++/14/bits/stl_stack.h /usr/include/c++/14/regex \
- /usr/include/c++/14/bitset /usr/include/c++/14/locale \
+ /usr/include/c++/14/pstl/execution_defs.h \
+ /home/kali/git/./MVC/../Storage/../Octree/ContainerPosition.hpp \
+ /home/kali/git/./MVC/../Storage/../Octree/Point.hpp \
+ /usr/include/c++/14/memory \
+ /usr/include/c++/14/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/shared_ptr.h \
+ /usr/include/c++/14/bits/shared_ptr_base.h \
+ /usr/include/c++/14/ext/concurrence.h \
+ /usr/include/c++/14/bits/shared_ptr_atomic.h \
+ /usr/include/c++/14/backward/auto_ptr.h \
+ /usr/include/c++/14/bits/ranges_uninitialized.h \
+ /usr/include/c++/14/pstl/glue_memory_defs.h /usr/include/c++/14/stack \
+ /usr/include/c++/14/deque /usr/include/c++/14/bits/stl_deque.h \
+ /usr/include/c++/14/bits/deque.tcc /usr/include/c++/14/bits/stl_stack.h \
+ /usr/include/c++/14/regex /usr/include/c++/14/bitset \
+ /usr/include/c++/14/locale \
  /usr/include/c++/14/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/messages_members.h \
@@ -253,25 +250,25 @@ CMakeFiles/StorageManagement.dir/main.cpp.o: \
  /usr/include/c++/14/bits/regex.h /usr/include/c++/14/bits/regex.tcc \
  /usr/include/c++/14/bits/regex_executor.h \
  /usr/include/c++/14/bits/regex_executor.tcc \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Storage/../Checker/Checker.hpp \
+ /home/kali/git/./MVC/../Storage/../Checker/Checker.hpp \
  /usr/include/c++/14/functional /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
  /usr/include/c++/14/bits/hashtable.h \
  /usr/include/c++/14/bits/hashtable_policy.h \
  /usr/include/c++/14/bits/enable_special_members.h \
  /usr/include/c++/14/bits/erase_if.h /usr/include/c++/14/array \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Storage/../Checker/../Container/Container.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Storage/../Checker/../Container/./I/IContainer.hpp \
+ /home/kali/git/./MVC/../Storage/../Checker/../Container/Container.hpp \
+ /home/kali/git/./MVC/../Storage/../Checker/../Container/./I/IContainer.hpp \
  /usr/include/c++/14/condition_variable \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/view.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Container/RefragedContainer.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Container/./I/IRefragedContainer.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Container/./I/IContainer.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Container/Container.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Container/FragileContainer.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Container/./I/IFragile.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Container/Frag_and_Ref.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Container/FragileContainer.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/../Container/RefragedContainer.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./MVC/view.hpp \
- /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/./Storage/Storage.hpp
+ /home/kali/git/./MVC/../Container/LibraryManager/LibraryManager.hpp \
+ /usr/include/dlfcn.h /usr/include/x86_64-linux-gnu/bits/dlfcn.h \
+ /usr/include/x86_64-linux-gnu/bits/dl_find_object.h \
+ /usr/include/dirent.h /usr/include/x86_64-linux-gnu/bits/dirent.h \
+ /usr/include/x86_64-linux-gnu/bits/dirent_ext.h \
+ /home/kali/git/./MVC/../Container/LibraryManager/../I/IContainer.hpp \
+ /home/kali/git/./MVC/view.hpp \
+ /home/kali/git/./MVC/../Container/AnimalContainer.hpp \
+ /home/kali/git/./MVC/../Container/./I/IContainer.hpp \
+ /home/kali/git/./MVC/../Container/ExplosiveContainer.hpp \
+ /home/kali/git/./MVC/../Container/./Container.hpp \
+ /home/kali/git/./MVC/view.hpp /home/kali/git/./Storage/Storage.hpp

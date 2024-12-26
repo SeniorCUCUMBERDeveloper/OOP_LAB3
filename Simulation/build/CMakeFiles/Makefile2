@@ -81,12 +81,12 @@ clean: CMakeFiles/StorageSimulation.dir/clean
 CMakeFiles/StorageSimulation.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StorageSimulation.dir/build.make CMakeFiles/StorageSimulation.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StorageSimulation.dir/build.make CMakeFiles/StorageSimulation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Simulation/build/CMakeFiles --progress-num=1,2,3 "Built target StorageSimulation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Simulation/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target StorageSimulation"
 .PHONY : CMakeFiles/StorageSimulation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/StorageSimulation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Simulation/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Simulation/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/StorageSimulation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Simulation/build/CMakeFiles 0
 .PHONY : CMakeFiles/StorageSimulation.dir/rule

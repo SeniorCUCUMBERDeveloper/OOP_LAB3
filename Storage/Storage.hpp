@@ -1,7 +1,7 @@
 #ifndef STORAGE_HPP
 #define STORAGE_HPP
 
-#include "../Container/I/IContainer.hpp"
+//#include "../Container/I/IContainer.hpp"
 #include <thread> 
 #include <vector>
 #include <list>
@@ -48,6 +48,9 @@ class Storage{
           int getTemperature() const{
             return temperature;
           }
+          Octree<Point<int>, std::shared_ptr<IContainer>> getContainer(){
+            return containers;
+          }
           size_t howContainer(std::shared_ptr<IContainer> container);
           void addContainer(std::shared_ptr<IContainer>, int X, int Y, int Z);
           void getSize(int l, int w, int h);
@@ -59,7 +62,6 @@ class Storage{
           std::pair<ContainerPosition<Point<int>>, std::shared_ptr<IContainer>> find(std::string id);
 
           Storage& operator=(const Storage& other);
-
 
         private:
           std::mutex mtx;
