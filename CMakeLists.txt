@@ -21,18 +21,20 @@ target_include_directories(Container PUBLIC "${PROJECT_SOURCE_DIR}/Container")
 
 
 file(GLOB_RECURSE EXPLOSIVE_CONTAINER_SRC "ExplosiveContainer.cpp")
-add_library(ExplosiveContainer SHARED ${EXPLOSIVE_CONTAINER_SRC} "${PROJECT_SOURCE_DIR}/Container/Container.cpp")
+add_library(ExplosiveContainer SHARED ${EXPLOSIVE_CONTAINER_SRC} "${PROJECT_SOURCE_DIR}/Container/Container.cpp") # Соединяем с Container.cpp
 target_include_directories(ExplosiveContainer PUBLIC
     "${PROJECT_SOURCE_DIR}/ExplosiveContainer"
     "${PROJECT_SOURCE_DIR}/Container"
 )
 
-# file(GLOB_RECURSE ANIMAL_CONTAINER_SRC "AnimalContainer.cpp")
-# add_library(AnimalContainer SHARED ${ANIMAL_CONTAINER_SRC})
-# target_include_directories(AnimalContainer PUBLIC
-#     "${PROJECT_SOURCE_DIR}/AnimalContainer"
-#     "${PROJECT_SOURCE_DIR}/I/IContainer"
-# )
+
+file(GLOB_RECURSE ANIMAL_CONTAINER_SRC "AnimalContainer.cpp")
+add_library(AnimalContainer SHARED ${ANIMAL_CONTAINER_SRC})
+target_include_directories(AnimalContainer PUBLIC
+    "${PROJECT_SOURCE_DIR}/AnimalContainer"
+    "${PROJECT_SOURCE_DIR}/I/IContainer"
+)
+
 
 file(GLOB_RECURSE FRAG_AND_REF_SRC "Frag_and_Ref.cpp")
 add_library(FragAndRef SHARED ${FRAG_AND_REF_SRC})

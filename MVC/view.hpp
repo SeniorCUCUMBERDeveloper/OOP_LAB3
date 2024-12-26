@@ -7,7 +7,6 @@
 #include <memory>
 #include "../Storage/Storage.hpp"
 #include "../Container/AnimalContainer.hpp"
-#include "../Container/ExplosiveContainer.hpp"
 
 
 
@@ -36,12 +35,7 @@ public:
         for (const auto& containerPair : containers) {
             auto container = containerPair.second;
             std::cout << "Container No. " << std::to_string(i) << std::endl;
-            std::cout << "ID: " << container->getId() << " " << container->isType() << std::endl;
-            std::cout << "Client: " << container->getClient() << std::endl;
-            std::cout << "Length: " << container->getLength() << ", " 
-                      << "Width: " << container->getWidth() << ", " 
-                      << "Height: " << container->getHeight() << std::endl;
-            std::cout << "Mass: " << container->getMass() << std::endl;
+            container->getInfo(std::cout);
             i++;
         }
     }
@@ -61,7 +55,7 @@ public:
         std::cout << "3. Refrigerated container\n";
         std::cout << "4. Fragile refrigerated container\n";
         std::cout << "5. Explosive container\n";
-        std::cout << "6. Explosive container\n";
+        std::cout << "6. Animal container\n";
         int type;
         std::cin >> type;
 
@@ -121,10 +115,22 @@ public:
             std::cout << "Enter maximum temperature: ";
             std::cin >> maxTemperature;
         }
+
         
         std::shared_ptr<IContainer> container(
             createFunc(id, client, length, width, height, cost, mass, maxPressure, maxTemperature)
         );
+        if(type == 6){
+            Animal animal;
+            std::cout << "Enter the name of the animal: ";
+            std::cin >> animal.name;
+            std::cout << "Enter the age of the animal: ";
+            std::cin >> animal.age;
+            std::cout << "Enter the weight of the animal: ";
+            std::cin >> animal.weight;
+            auto animalContainer = std::dynamic_pointer_cast<IAnimalContainer>(container);
+            animalContainer->setAnimal(animal);
+        }
         return container;
     }
 
@@ -146,80 +152,12 @@ public:
         std::cin >> method;
     }
 
-    void promptStorage(int& id, int& length, int& width, int& height, double& temperature){
-        std::cout << "Enter Storage ID: ";
-        std::cin >> id;
-        std::cout << "Enter Storage Length: ";
-        std::cin >> length;
-        std::cout << "Enter Storage Width: ";
-        std::cin >> width;
-        std::cout << "Enter Storage Height: ";
-        std::cin >> height;
-        std::cout << "Enter Storage Temperature: ";
-        std::cin >> temperature;
-    }
-
 
     void displayMessage(const std::string &message) {
         std::cout << message;
     }
-    
-    LibraryManager libraryManager;
-
-    int selectOperation() {
-        int selectedIndex = 0;
-        const std::vector<std::string> operations = {
-            "Add container",
-            "Add container with XYZ coordinates",
-            "Remove container",
-            "Move container",
-            "Rotate container",
-            "Show all containers",
-            "Show storage information",
-            "Exit"
-        };
-        int totalOperations = operations.size();
-
-        while (true) {
-
-            // std::cout << "\033[2J\033[1;1H";
-            // std::cout << "--- Storage Management Menu ---\n";
-            
-            for (int i = 0; i < operations.size(); ++i) {
-                if (i == selectedIndex) {
-                    std::cout << "> ";
-                } else {
-                    std::cout << "  ";
-                }
-                std::cout << operations[i] << "\n";
-            }
-            
-            char input;
-            std::cout << "Use arrow keys to navigate (up: 'w', down: 's', select: 'e', cancel: 'q'): ";
-            std::cin >> input;
-            
-            if (input == 'w') {
-                if(selectedIndex > 0){
-                    selectedIndex--;
-                }else{
-                    selectedIndex = totalOperations - 1;
-                }
-            } else if (input == 's') {
-                if (selectedIndex < totalOperations - 1) {
-                    selectedIndex++;
-                } else {
-                    selectedIndex = 0;
-                }
-            } else if (input == 'e') {
-                return selectedIndex;
-            } else if (input == 'q') {
-                std::cout << "Exiting.\n";
-                return -1;
-            } else {
-                std::cout << "Invalid input. Please use 'w', 's', 'e' or 'q'.\n";
-            }
-        }
-    }
+    public:
+        LibraryManager libraryManager;
 };
 
 #endif

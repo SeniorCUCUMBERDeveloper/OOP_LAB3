@@ -35,8 +35,6 @@ class FragileRefragedContainer : public IFragileContainer , public IRefragedCont
          * @param maxM Maximum pressure the container can withstand.
          * @param maxT Maximum temperature the container can withstand.
          */
-        FragileRefragedContainer() = default;
-        
         FragileRefragedContainer(std::string number, std::string client, int length, int width, int height, double cost, double mass, double maxM, double maxT);
 
         /**

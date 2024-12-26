@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DContainer_EXPORTS
 
-CXX_INCLUDES = -I/home/kali/git/Container -I/home/kali/git/MVC -I/home/kali/git/Storage -I/home/kali/git/Container/I -I/home/kali/git/Octree
+CXX_INCLUDES = -I/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container -I/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/MVC -I/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage -I/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/I -I/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Octree
 
 CXX_FLAGS = -std=gnu++20 -fPIC
 

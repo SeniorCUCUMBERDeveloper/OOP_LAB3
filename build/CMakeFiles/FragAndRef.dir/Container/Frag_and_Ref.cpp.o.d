@@ -1,10 +1,12 @@
 CMakeFiles/FragAndRef.dir/Container/Frag_and_Ref.cpp.o: \
- /home/kali/git/Container/Frag_and_Ref.cpp /usr/include/stdc-predef.h \
- /home/kali/git/Container/Frag_and_Ref.hpp \
- /home/kali/git/Container/FragileContainer.hpp \
- /home/kali/git/Container/./I/IFragile.hpp \
- /home/kali/git/Container/./I/IContainer.hpp /usr/include/c++/14/tuple \
- /usr/include/c++/14/bits/stl_pair.h /usr/include/c++/14/type_traits \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp \
+ /usr/include/stdc-predef.h \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/./I/IFragile.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/./I/IContainer.hpp \
+ /usr/include/c++/14/tuple /usr/include/c++/14/bits/stl_pair.h \
+ /usr/include/c++/14/type_traits \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -206,5 +208,5 @@ CMakeFiles/FragAndRef.dir/Container/Frag_and_Ref.cpp.o: \
  /usr/include/c++/14/bits/ranges_algobase.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/kali/git/Container/RefragedContainer.hpp \
- /home/kali/git/Container/./I/IRefragedContainer.hpp
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/./I/IRefragedContainer.hpp

@@ -1,8 +1,11 @@
 CMakeFiles/Container.dir/Container/AnimalContainer.cpp.o: \
- /home/kali/git/Container/AnimalContainer.cpp /usr/include/stdc-predef.h \
- /home/kali/git/Container/AnimalContainer.hpp \
- /home/kali/git/Container/./I/IContainer.hpp /usr/include/c++/14/tuple \
- /usr/include/c++/14/bits/stl_pair.h /usr/include/c++/14/type_traits \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/AnimalContainer.cpp \
+ /usr/include/stdc-predef.h \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/AnimalContainer.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/./I/IAnimal.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/./I/IContainer.hpp \
+ /usr/include/c++/14/tuple /usr/include/c++/14/bits/stl_pair.h \
+ /usr/include/c++/14/type_traits \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -204,7 +207,7 @@ CMakeFiles/Container.dir/Container/AnimalContainer.cpp.o: \
  /usr/include/c++/14/bits/ranges_algobase.h \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
- /home/kali/git/Container/../Storage/Storage.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/../Storage/Storage.hpp \
  /usr/include/c++/14/thread /usr/include/c++/14/stop_token \
  /usr/include/c++/14/atomic /usr/include/c++/14/bits/std_thread.h \
  /usr/include/c++/14/semaphore /usr/include/c++/14/bits/semaphore_base.h \
@@ -218,15 +221,15 @@ CMakeFiles/Container.dir/Container/AnimalContainer.cpp.o: \
  /usr/include/c++/14/bits/stl_list.h /usr/include/c++/14/bits/list.tcc \
  /usr/include/c++/14/mutex /usr/include/c++/14/bits/unique_lock.h \
  /usr/include/c++/14/shared_mutex \
- /home/kali/git/Container/../Storage/../Octree/Octree.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/../Storage/../Octree/Octree.hpp \
  /usr/include/c++/14/algorithm /usr/include/c++/14/bits/stl_algo.h \
  /usr/include/c++/14/bits/algorithmfwd.h \
  /usr/include/c++/14/bits/stl_heap.h \
  /usr/include/c++/14/bits/uniform_int_dist.h \
  /usr/include/c++/14/bits/ranges_algo.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
- /home/kali/git/Container/../Storage/../Octree/ContainerPosition.hpp \
- /home/kali/git/Container/../Storage/../Octree/Point.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/../Storage/../Octree/ContainerPosition.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/../Storage/../Octree/Point.hpp \
  /usr/include/c++/14/stack /usr/include/c++/14/deque \
  /usr/include/c++/14/bits/stl_deque.h /usr/include/c++/14/bits/deque.tcc \
  /usr/include/c++/14/bits/stl_stack.h /usr/include/c++/14/regex \
@@ -253,13 +256,13 @@ CMakeFiles/Container.dir/Container/AnimalContainer.cpp.o: \
  /usr/include/c++/14/bits/regex.h /usr/include/c++/14/bits/regex.tcc \
  /usr/include/c++/14/bits/regex_executor.h \
  /usr/include/c++/14/bits/regex_executor.tcc \
- /home/kali/git/Container/../Storage/../Checker/Checker.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/../Storage/../Checker/Checker.hpp \
  /usr/include/c++/14/functional /usr/include/c++/14/unordered_map \
  /usr/include/c++/14/bits/unordered_map.h \
  /usr/include/c++/14/bits/hashtable.h \
  /usr/include/c++/14/bits/hashtable_policy.h \
  /usr/include/c++/14/bits/enable_special_members.h \
  /usr/include/c++/14/bits/erase_if.h /usr/include/c++/14/array \
- /home/kali/git/Container/../Storage/../Checker/../Container/Container.hpp \
- /home/kali/git/Container/../Storage/../Checker/../Container/./I/IContainer.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/../Storage/../Checker/../Container/Container.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/../Storage/../Checker/../Container/./I/IContainer.hpp \
  /usr/include/c++/14/condition_variable

@@ -60,7 +60,7 @@ extern "C" IContainer* createAnimalContainer(std::string number, std::string cli
     return new AnimalContainer(number, client, length, width, height, cost, mass, maxTemperature, animal);
 }
 
-bool under_Animal(Storage& storage, ContainerPosition<Point<int>>& positionOne){
+void under_Animal(Storage& storage, ContainerPosition<Point<int>>& positionOne){
     std::shared_mutex mtx;
     std::vector<std::pair<ContainerPosition<Point<int>>, std::shared_ptr<IContainer>>> allContainer;
     {
@@ -77,13 +77,12 @@ bool under_Animal(Storage& storage, ContainerPosition<Point<int>>& positionOne){
         positionOne.LLDown.y <= positionTwo.RLDown.y && positionOne.RLDown.y >= positionTwo.LLDown.y && 
         positionOne.LLDown.z <= positionTwo.LLUp.z && positionOne.LLUp.z >= positionTwo.LLDown.z) 
         {
-            return true;
+            throw std::invalid_argument("Cannot put on a container with pets");
         }
     }
-    return false;
 }
 
-extern "C" void checkAnimalContainer(Storage& storage, std::shared_ptr<IContainer> container, ContainerPosition<Point<int>> pos){
+extern "C" void checkAnimal(Storage& storage, std::shared_ptr<IContainer> container, ContainerPosition<Point<int>> pos){
     if(container == nullptr){
         throw std::invalid_argument("Error object not founded");
     }
@@ -92,9 +91,7 @@ extern "C" void checkAnimalContainer(Storage& storage, std::shared_ptr<IContaine
     position_for_check.LRDown.z -= 1;
     position_for_check.RLDown.z -= 1;
     position_for_check.RRDown.z -= 1;
-    if(under_Animal){
-        throw std::invalid_argument("Cannot put on a container with pets");
-    }
+    under_Animal(storage, position_for_check);
 }
 
 

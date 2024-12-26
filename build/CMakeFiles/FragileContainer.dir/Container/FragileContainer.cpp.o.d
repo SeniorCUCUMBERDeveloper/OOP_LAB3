@@ -1,9 +1,11 @@
 CMakeFiles/FragileContainer.dir/Container/FragileContainer.cpp.o: \
- /home/kali/git/Container/FragileContainer.cpp /usr/include/stdc-predef.h \
- /home/kali/git/Container/FragileContainer.hpp \
- /home/kali/git/Container/./I/IFragile.hpp \
- /home/kali/git/Container/./I/IContainer.hpp /usr/include/c++/14/tuple \
- /usr/include/c++/14/bits/stl_pair.h /usr/include/c++/14/type_traits \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp \
+ /usr/include/stdc-predef.h \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/./I/IFragile.hpp \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/./I/IContainer.hpp \
+ /usr/include/c++/14/tuple /usr/include/c++/14/bits/stl_pair.h \
+ /usr/include/c++/14/type_traits \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

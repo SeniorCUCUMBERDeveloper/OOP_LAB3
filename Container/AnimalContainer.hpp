@@ -1,7 +1,7 @@
 #ifndef ANIMALCONTAINER_HPP
 #define ANIMALCONTAINER_HPP
 
-#include "./I/IContainer.hpp"
+#include "./I/IAnimal.hpp"
 
 /**
  * @struct Animal
@@ -22,7 +22,7 @@ struct Animal {
  * Inherits from the IContainer class and includes additional parameters
  * related to storing animals, such as the container's dimensions and maximum temperature.
  */
-class AnimalContainer : public IContainer {
+class AnimalContainer : public IAnimalContainer {
 protected:
     std::string number;         ///< Container number.
     std::string client;         ///< Client information.

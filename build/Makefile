@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/git
+CMAKE_SOURCE_DIR = /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/git/build
+CMAKE_BINARY_DIR = /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles /home/kali/git/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -141,6 +141,19 @@ ExplosiveContainer: cmake_check_build_system
 ExplosiveContainer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExplosiveContainer.dir/build.make CMakeFiles/ExplosiveContainer.dir/build
 .PHONY : ExplosiveContainer/fast
+
+#=============================================================================
+# Target rules for targets named AnimalContainer
+
+# Build rule for target.
+AnimalContainer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AnimalContainer
+.PHONY : AnimalContainer
+
+# fast build rule for target.
+AnimalContainer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AnimalContainer.dir/build.make CMakeFiles/AnimalContainer.dir/build
+.PHONY : AnimalContainer/fast
 
 #=============================================================================
 # Target rules for targets named FragAndRef
@@ -200,6 +213,7 @@ Container/AnimalContainer.o: Container/AnimalContainer.cpp.o
 # target to build an object file
 Container/AnimalContainer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/AnimalContainer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AnimalContainer.dir/build.make CMakeFiles/AnimalContainer.dir/Container/AnimalContainer.cpp.o
 .PHONY : Container/AnimalContainer.cpp.o
 
 Container/AnimalContainer.i: Container/AnimalContainer.cpp.i
@@ -208,6 +222,7 @@ Container/AnimalContainer.i: Container/AnimalContainer.cpp.i
 # target to preprocess a source file
 Container/AnimalContainer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/AnimalContainer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AnimalContainer.dir/build.make CMakeFiles/AnimalContainer.dir/Container/AnimalContainer.cpp.i
 .PHONY : Container/AnimalContainer.cpp.i
 
 Container/AnimalContainer.s: Container/AnimalContainer.cpp.s
@@ -216,6 +231,7 @@ Container/AnimalContainer.s: Container/AnimalContainer.cpp.s
 # target to generate assembly for a file
 Container/AnimalContainer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/Container/AnimalContainer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AnimalContainer.dir/build.make CMakeFiles/AnimalContainer.dir/Container/AnimalContainer.cpp.s
 .PHONY : Container/AnimalContainer.cpp.s
 
 Container/Container.o: Container/Container.cpp.o
@@ -409,6 +425,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... AnimalContainer"
 	@echo "... Container"
 	@echo "... ExplosiveContainer"
 	@echo "... FragAndRef"

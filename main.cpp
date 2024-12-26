@@ -4,7 +4,6 @@
 #include "./Storage/Storage.hpp"
 
 
-
 int main() {
     std::string libDirectory = "./libs";
     StorageView view(libDirectory);
@@ -15,58 +14,69 @@ int main() {
     double temperature;
 
 
-    view.promptStorage(id, length, width, height, temperature);
+    std::cout << "Enter Storage ID: ";
+    std::cin >> id;
+    std::cout << "Enter Storage Length: ";
+    std::cin >> length;
+    std::cout << "Enter Storage Width: ";
+    std::cin >> width;
+    std::cout << "Enter Storage Height: ";
+    std::cin >> height;
+    std::cout << "Enter Storage Temperature: ";
+    std::cin >> temperature;
 
     Storage storage(id, length, width, height, temperature);
     StorageController controller(storage, view);
-    std::this_thread::sleep_for(std::chrono::milliseconds(4000));
 
     int choice;
 
     do {
         try {
-            choice = view.selectOperation();
+            std::cout << "\n--- Storage Management Menu ---\n"
+                      << "1. Add container\n"
+                      << "2. Add container with XYZ coordinates\n"
+                      << "3. Remove container\n"
+                      << "4. Move container\n"
+                      << "5. Rotate container\n"
+                      << "6. Show all containers\n"
+                      << "7. Show storage information\n"
+                      << "8. Exit\n"
+                      << "Choose an action: ";
+            std::cin >> choice;
 
             switch (choice) {
-                case 0:
-                    controller.addContainer();
-                    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-                    break;
                 case 1:
-                    controller.addContainerXYZ();
+                    controller.addContainer();
                     break;
                 case 2:
-                    controller.removeContainer();
-                    std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+                    controller.addContainerXYZ();
                     break;
                 case 3:
-                    controller.moveContainer();
-                    std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+                    controller.removeContainer();
                     break;
                 case 4:
-                    controller.rotateContainer();
-                    std::this_thread::sleep_for(std::chrono::milliseconds(2000));
+                    controller.moveContainer();
                     break;
                 case 5:
-                    controller.displayContainers();
-                    std::this_thread::sleep_for(std::chrono::milliseconds(4000));
+                    controller.rotateContainer();
                     break;
                 case 6:
-                    controller.displayStorageInfo();
-                    std::this_thread::sleep_for(std::chrono::milliseconds(4000));
+                    controller.displayContainers();
                     break;
                 case 7:
-                    view.displayMessage("Exiting.\n");
-                    return 0;
-                case -1:
-                    return 0;
+                    controller.displayStorageInfo();
+                    break;
+                case 8:
+                    std::cout << "Exiting.\n";
+                    break;
                 default:
                     throw std::invalid_argument("Invalid choice. Please try again.");
             }
         } catch (const std::exception& e) {
             std::cerr << "An error occurred: " << e.what() << std::endl;
-            std::this_thread::sleep_for(std::chrono::milliseconds(4000));
             choice = 0;
         }
     } while (choice != 8);
+
+    return 0;
 }

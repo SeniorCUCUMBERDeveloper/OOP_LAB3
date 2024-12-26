@@ -134,13 +134,10 @@ private:
     }
 
     void loadCheckFunctions() {
-        std::vector<std::string> checkFunctions = {"checkAnimalContainer", "checkExplosiveContainer"};
-        for(auto func : checkFunctions){
-            auto checkFunctions = view.libraryManager.getCheckFunctions(func.c_str());
-            for (auto checkFunc : checkFunctions) {
-                storage.addExternalCheckFunction(checkFunc);
-            }
-        }
+            auto checkFunctions = view.libraryManager.getCheckFunctions("checkExplosive");
+            storage.addExternalCheckFunction(checkFunctions[0]);
+            checkFunctions = view.libraryManager.getCheckFunctions("checkAnimal");
+            storage.addExternalCheckFunction(checkFunctions[0]);
     }
 };
 

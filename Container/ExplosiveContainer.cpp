@@ -27,55 +27,59 @@ ExplosiveContainer::ExplosiveContainer(std::string number, std::string client, i
 }
 
 
-extern "C" IContainer* createExplosiveContainer(std::string number, std::string client, int length, int width, int height, double cost, double mass, double maxP, double maxT) {
-    return new ExplosiveContainer(number, client, length, width, height, cost, mass);
+extern "C" IContainer* createExplosiveContainer(std::string id, std::string cl_nt, int l, int w, int h, double cost, double mass, double maxP, double maxT) {
+    return new ExplosiveContainer(id, cl_nt, l, w, h, cost, mass);
 }
 
 
-bool CollisionExplasive(const ContainerPosition<Point<int>> firstPosition, const ContainerPosition<Point<int>> secondPosition) {
-    int firstMinX = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinX(firstPosition);
-    int firstMaxX = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxX(firstPosition);
-    int firstMinY = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinY(firstPosition);
-    int firstMaxY = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxY(firstPosition);
-    int firstMinZ = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinZ(firstPosition);
-    int firstMaxZ = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxZ(firstPosition);
+bool ContainEntity(const ContainerPosition<Point<int>> pos1, const ContainerPosition<Point<int>> pos2){
+    int pos1MinX = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinX(pos1);
+    int pos1MaxX = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxX(pos1);
+    int pos1MinY = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinY(pos1);
+    int pos1MaxY = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxY(pos1);
+    int pos1MinZ = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinZ(pos1);
+    int pos1MaxZ = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxZ(pos1);
     
-    int secondMinX = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinX(secondPosition);
-    int secondMaxX = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxX(secondPosition);
-    int secondMinY = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinY(secondPosition);
-    int secondMaxY = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxY(secondPosition);
-    int secondMinZ = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinZ(secondPosition);
-    int secondMaxZ = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxZ(secondPosition);
-    
-    return (firstMinX <= secondMaxX && firstMaxX >= secondMinX) &&
-           (firstMinY <= secondMaxY && firstMaxY >= secondMinY) &&
-           (firstMinZ <= secondMaxZ && firstMaxZ >= secondMinZ);
+
+    int pos2MinX = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinX(pos2);
+    int pos2MaxX = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxX(pos2);
+    int pos2MinY = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinY(pos2);
+    int pos2MaxY = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxY(pos2);
+    int pos2MinZ = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinZ(pos2);
+    int pos2MaxZ = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxZ(pos2);
+
+
+    return (pos1MinX <= pos2MaxX && pos1MaxX >= pos2MinX) &&
+        (pos1MinY <= pos2MaxY && pos1MaxY >= pos2MinY) &&
+        (pos1MinZ <= pos2MaxZ && pos1MaxZ >= pos2MinZ);
 }
 
-void searchExplasive(Storage& storage, ContainerPosition<Point<int>>& position){
+void searchExplasiveCollision(Storage& storage, ContainerPosition<Point<int>>& position){
+    std::vector<std::pair<ContainerPosition<Point<int>>,std::shared_ptr<IContainer>>> result;
     std::shared_mutex localMutex;
     int minX = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinX(position);
     int maxX = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxX(position);
     int minY = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinY(position);
     int maxY = Octree<Point<int>, std::shared_ptr<IContainer>>::getMaxY(position);
     int minZ = Octree<Point<int>, std::shared_ptr<IContainer>>::getMinZ(position);
-    std::vector<std::pair<ContainerPosition<Point<int>>, std::shared_ptr<IContainer>>> vector;
+    std::vector<std::pair<ContainerPosition<Point<int>>, std::shared_ptr<IContainer>>> current;
     {
     std::shared_lock<std::shared_mutex> lock(localMutex);
-    vector = storage.getALLcontainers();
+    current = storage.getALLcontainers();
     }
-    for (const auto& container : vector) {
+    for (const auto& container : current) {
+        const ContainerPosition<Point<int>>& containerPos = container.first;
         if(container.second->isType() == "Animal Container"){
             throw std::invalid_argument("Explosive container should not be stored in a storage with animal containers");
         }
-        if (container.second->isType() == "Explosive Container" && CollisionExplasive(position, container.first)) {
+        if (container.second->isType() == "Explosive Container" && ContainEntity(position, containerPos)) {
             throw std::invalid_argument("Explosive Containers cannot stand together");
         }
     }
 }
 
 
-extern "C" void checkExplosiveContainer(Storage& storage, std::shared_ptr<IContainer> container, ContainerPosition<Point<int>> pos){
+extern "C" void checkExplosive(Storage& storage, std::shared_ptr<IContainer> container, ContainerPosition<Point<int>> pos){
     if(container == nullptr){
         throw std::invalid_argument("Container is not fragile");
     }
@@ -89,6 +93,6 @@ extern "C" void checkExplosiveContainer(Storage& storage, std::shared_ptr<IConta
         copy.RRDown.x++; copy.RRDown.y++; copy.RRDown.z--;
         copy.RLDown.x--; copy.RLDown.y++; copy.RLDown.z--;
         copy.RLUp.x--; copy.RLUp.y++; copy.RLUp.z++;
-        searchExplasive(storage, copy);
+        searchExplasiveCollision(storage, copy);
     }
 }
