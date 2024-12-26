@@ -3,16 +3,12 @@
 #include "./MVC/view.hpp"
 #include "./Storage/Storage.hpp"
 
-
 int main() {
-    std::string libDirectory = "./libs";
-    StorageView view(libDirectory);
     int id;
     int length;
     int width;
     int height;
     double temperature;
-
 
     std::cout << "Enter Storage ID: ";
     std::cin >> id;
@@ -26,6 +22,7 @@ int main() {
     std::cin >> temperature;
 
     Storage storage(id, length, width, height, temperature);
+    StorageView view;
     StorageController controller(storage, view);
 
     int choice;

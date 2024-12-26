@@ -6,14 +6,14 @@
 #include <string>
 #include <memory>
 #include "../Storage/Storage.hpp"
-
+#include "../Container/RefragedContainer.hpp"
+#include "../Container/Container.hpp"
+#include "../Container/FragileContainer.hpp"
+#include "../Container/Frag_and_Ref.hpp"
 
 
 class StorageView {
 public:
-    StorageView(const std::string& libDirectory) : libraryManager(libDirectory) {}
-    ~StorageView() {}
-
     void displayStorageInfo(const Storage& storage) {
         std::cout << "Storage Information:\n";
         std::cout << "Dimensions: " << std::to_string(storage.getLength()) << " x " 
@@ -45,55 +45,23 @@ public:
     }
 
 
-    
     std::shared_ptr<IContainer> promptAddContainer() {
-        std::string id, client;
+        std::string id, name;
         std::cout << "Enter container ID: ";
         std::cin >> id;
         std::cout << "Enter owner name: ";
-        std::cin >> client;
+        std::cin >> name;
 
         std::cout << "Choose container type:\n";
         std::cout << "1. Regular container\n";
         std::cout << "2. Fragile container\n";
         std::cout << "3. Refrigerated container\n";
         std::cout << "4. Fragile refrigerated container\n";
-        std::cout << "5. Explosive container\n";
         int type;
         std::cin >> type;
 
-        using CreateContainerFunc = IContainer* (*)(std::string, std::string, int, int, int, double, double, double, double);
-        CreateContainerFunc createFunc = nullptr;
-
-        switch (type) {
-            case 1:
-                createFunc = libraryManager.getCreateFunction<CreateContainerFunc>("createRegularContainer");
-                break;
-            case 2:
-                createFunc = libraryManager.getCreateFunction<CreateContainerFunc>("createFragileContainer");
-                break;
-            case 3:
-                createFunc = libraryManager.getCreateFunction<CreateContainerFunc>("createRefrigeratedContainer");
-                break;
-            case 4:
-                createFunc = libraryManager.getCreateFunction<CreateContainerFunc>("createFragileRefrigeratedContainer");
-                break;
-            case 5:
-                createFunc = libraryManager.getCreateFunction<CreateContainerFunc>("createExplosiveContainer");
-                break;
-            default:
-                std::cout << "Invalid container type. Container not added.\n";
-                return nullptr;
-        }
-
-        if (!createFunc) {
-            std::cout << "Error: unable to get create function for the selected container type.\n";
-            return nullptr;
-        }
-
-        
         int length, width, height;
-        double cost, mass, maxPressure = 0.0, maxTemperature = 0.0;
+        double cost, mass;
 
         std::cout << "Enter length: ";
         std::cin >> length;
@@ -106,22 +74,33 @@ public:
         std::cout << "Enter mass: ";
         std::cin >> mass;
 
-        if (type == 2 || type == 4) { 
-            std::cout << "Enter maximum pressure: ";
-            std::cin >> maxPressure;
+        switch (type) {
+            case 1:
+                return std::make_shared<Container>(id, name, length, width, height, cost, mass);
+            case 2: {
+                double maxPressure;
+                std::cout << "Enter maximum pressure: ";
+                std::cin >> maxPressure;
+                return std::make_shared<FragileContainer>(id, name, length, width, height, cost, mass, maxPressure);
+            }
+            case 3: {
+                double maxTemperature;
+                std::cout << "Enter maximum temperature: ";
+                std::cin >> maxTemperature;
+                return std::make_shared<RefragedContainer>(id, name, length, width, height, cost, mass, maxTemperature);
+            }
+            case 4: {
+                double maxPressure, maxTemperature;
+                std::cout << "Enter maximum pressure: ";
+                std::cin >> maxPressure;
+                std::cout << "Enter maximum temperature: ";
+                std::cin >> maxTemperature;
+                return std::make_shared<FragileRefragedContainer>(id, name, length, width, height, cost, mass, maxPressure, maxTemperature);
+            }
+            default:
+                std::cout << "Invalid container type. Container not added.\n";
+                return nullptr;
         }
-
-        if (type == 3 || type == 4) { 
-            std::cout << "Enter maximum temperature: ";
-            std::cin >> maxTemperature;
-        }
-
-        
-        std::shared_ptr<IContainer> container(
-            createFunc(id, client, length, width, height, cost, mass, maxPressure, maxTemperature)
-        );
-
-        return container;
     }
 
     
@@ -146,8 +125,6 @@ public:
     void displayMessage(const std::string &message) {
         std::cout << message;
     }
-    public:
-        LibraryManager libraryManager;
 };
 
 #endif

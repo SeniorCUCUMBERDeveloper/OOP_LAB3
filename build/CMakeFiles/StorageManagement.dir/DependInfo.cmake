@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kali/git/Storage/Storage.cpp" "CMakeFiles/StorageManagement.dir/Storage/Storage.cpp.o" "gcc" "CMakeFiles/StorageManagement.dir/Storage/Storage.cpp.o.d"
-  "/home/kali/git/main.cpp" "CMakeFiles/StorageManagement.dir/main.cpp.o" "gcc" "CMakeFiles/StorageManagement.dir/main.cpp.o.d"
+  "/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.cpp" "CMakeFiles/StorageManagement.dir/Storage/Storage.cpp.o" "gcc" "CMakeFiles/StorageManagement.dir/Storage/Storage.cpp.o.d"
+  "/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/main.cpp" "CMakeFiles/StorageManagement.dir/main.cpp.o" "gcc" "CMakeFiles/StorageManagement.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

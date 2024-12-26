@@ -54,20 +54,15 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/git
+CMAKE_SOURCE_DIR = /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/git/build
+CMAKE_BINARY_DIR = /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Container.dir/all
-all: CMakeFiles/ExplosiveContainer.dir/all
-all: CMakeFiles/FragAndRef.dir/all
-all: CMakeFiles/FragileContainer.dir/all
-all: CMakeFiles/RefragedContainer.dir/all
 all: CMakeFiles/StorageManagement.dir/all
 .PHONY : all
 
@@ -76,143 +71,8 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Container.dir/clean
-clean: CMakeFiles/ExplosiveContainer.dir/clean
-clean: CMakeFiles/FragAndRef.dir/clean
-clean: CMakeFiles/FragileContainer.dir/clean
-clean: CMakeFiles/RefragedContainer.dir/clean
 clean: CMakeFiles/StorageManagement.dir/clean
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/Container.dir
-
-# All Build rule for target.
-CMakeFiles/Container.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kali/git/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Container"
-.PHONY : CMakeFiles/Container.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/Container.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Container.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 0
-.PHONY : CMakeFiles/Container.dir/rule
-
-# Convenience name for target.
-Container: CMakeFiles/Container.dir/rule
-.PHONY : Container
-
-# clean rule for target.
-CMakeFiles/Container.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Container.dir/build.make CMakeFiles/Container.dir/clean
-.PHONY : CMakeFiles/Container.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ExplosiveContainer.dir
-
-# All Build rule for target.
-CMakeFiles/ExplosiveContainer.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExplosiveContainer.dir/build.make CMakeFiles/ExplosiveContainer.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExplosiveContainer.dir/build.make CMakeFiles/ExplosiveContainer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kali/git/build/CMakeFiles --progress-num=7,8,9 "Built target ExplosiveContainer"
-.PHONY : CMakeFiles/ExplosiveContainer.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ExplosiveContainer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ExplosiveContainer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 0
-.PHONY : CMakeFiles/ExplosiveContainer.dir/rule
-
-# Convenience name for target.
-ExplosiveContainer: CMakeFiles/ExplosiveContainer.dir/rule
-.PHONY : ExplosiveContainer
-
-# clean rule for target.
-CMakeFiles/ExplosiveContainer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ExplosiveContainer.dir/build.make CMakeFiles/ExplosiveContainer.dir/clean
-.PHONY : CMakeFiles/ExplosiveContainer.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/FragAndRef.dir
-
-# All Build rule for target.
-CMakeFiles/FragAndRef.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragAndRef.dir/build.make CMakeFiles/FragAndRef.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragAndRef.dir/build.make CMakeFiles/FragAndRef.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kali/git/build/CMakeFiles --progress-num=10,11 "Built target FragAndRef"
-.PHONY : CMakeFiles/FragAndRef.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/FragAndRef.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FragAndRef.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 0
-.PHONY : CMakeFiles/FragAndRef.dir/rule
-
-# Convenience name for target.
-FragAndRef: CMakeFiles/FragAndRef.dir/rule
-.PHONY : FragAndRef
-
-# clean rule for target.
-CMakeFiles/FragAndRef.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragAndRef.dir/build.make CMakeFiles/FragAndRef.dir/clean
-.PHONY : CMakeFiles/FragAndRef.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/FragileContainer.dir
-
-# All Build rule for target.
-CMakeFiles/FragileContainer.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragileContainer.dir/build.make CMakeFiles/FragileContainer.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragileContainer.dir/build.make CMakeFiles/FragileContainer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kali/git/build/CMakeFiles --progress-num=12,13 "Built target FragileContainer"
-.PHONY : CMakeFiles/FragileContainer.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/FragileContainer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FragileContainer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 0
-.PHONY : CMakeFiles/FragileContainer.dir/rule
-
-# Convenience name for target.
-FragileContainer: CMakeFiles/FragileContainer.dir/rule
-.PHONY : FragileContainer
-
-# clean rule for target.
-CMakeFiles/FragileContainer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FragileContainer.dir/build.make CMakeFiles/FragileContainer.dir/clean
-.PHONY : CMakeFiles/FragileContainer.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/RefragedContainer.dir
-
-# All Build rule for target.
-CMakeFiles/RefragedContainer.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RefragedContainer.dir/build.make CMakeFiles/RefragedContainer.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RefragedContainer.dir/build.make CMakeFiles/RefragedContainer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kali/git/build/CMakeFiles --progress-num=14,15 "Built target RefragedContainer"
-.PHONY : CMakeFiles/RefragedContainer.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/RefragedContainer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RefragedContainer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 0
-.PHONY : CMakeFiles/RefragedContainer.dir/rule
-
-# Convenience name for target.
-RefragedContainer: CMakeFiles/RefragedContainer.dir/rule
-.PHONY : RefragedContainer
-
-# clean rule for target.
-CMakeFiles/RefragedContainer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RefragedContainer.dir/build.make CMakeFiles/RefragedContainer.dir/clean
-.PHONY : CMakeFiles/RefragedContainer.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/StorageManagement.dir
@@ -221,14 +81,14 @@ CMakeFiles/RefragedContainer.dir/clean:
 CMakeFiles/StorageManagement.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StorageManagement.dir/build.make CMakeFiles/StorageManagement.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StorageManagement.dir/build.make CMakeFiles/StorageManagement.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kali/git/build/CMakeFiles --progress-num=16,17,18 "Built target StorageManagement"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles --progress-num=1,2,3 "Built target StorageManagement"
 .PHONY : CMakeFiles/StorageManagement.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/StorageManagement.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/StorageManagement.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/git/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/build/CMakeFiles 0
 .PHONY : CMakeFiles/StorageManagement.dir/rule
 
 # Convenience name for target.

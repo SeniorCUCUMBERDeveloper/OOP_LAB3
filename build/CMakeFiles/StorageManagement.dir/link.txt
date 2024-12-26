@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,-rpath,/home/kali/git/build/libs CMakeFiles/StorageManagement.dir/Storage/Storage.cpp.o CMakeFiles/StorageManagement.dir/main.cpp.o -o bin/StorageManagement
+/usr/bin/c++ CMakeFiles/StorageManagement.dir/Storage/Storage.cpp.o CMakeFiles/StorageManagement.dir/main.cpp.o -o bin/StorageManagement

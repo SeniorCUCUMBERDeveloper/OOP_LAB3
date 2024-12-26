@@ -81,12 +81,12 @@ clean: CMakeFiles/myprog.dir/clean
 CMakeFiles/myprog.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target myprog"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles --progress-num=1,2,3,4 "Built target myprog"
 .PHONY : CMakeFiles/myprog.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/myprog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/myprog.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles 0
 .PHONY : CMakeFiles/myprog.dir/rule

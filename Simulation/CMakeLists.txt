@@ -8,10 +8,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(SOURCES
     Simulation.cpp
     ../Storage/Storage.cpp
-    ../Container/Container.cpp 
-    ../Container/Frag_and_Ref.cpp 
-    ../Container/RefragedContainer.cpp 
-    ../Container/FragileContainer.cpp
 )
 
 set(HEADERS

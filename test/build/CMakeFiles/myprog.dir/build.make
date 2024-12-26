@@ -111,71 +111,11 @@ CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/Te
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/Terminal.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/Terminal.cpp -o CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/Terminal.cpp.s
 
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o: CMakeFiles/myprog.dir/flags.make
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o: /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o: CMakeFiles/myprog.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o -MF CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o.d -o CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o -c /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp
-
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp > CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.i
-
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp -o CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.s
-
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o: CMakeFiles/myprog.dir/flags.make
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o: /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o: CMakeFiles/myprog.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o -MF CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o.d -o CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o -c /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp
-
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp > CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.i
-
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp -o CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.s
-
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o: CMakeFiles/myprog.dir/flags.make
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o: /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o: CMakeFiles/myprog.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o -MF CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o.d -o CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o -c /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp
-
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp > CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.i
-
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp -o CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.s
-
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o: CMakeFiles/myprog.dir/flags.make
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o: /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o: CMakeFiles/myprog.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o -MF CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o.d -o CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o -c /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp
-
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp > CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.i
-
-CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp -o CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.s
-
 # Object files for target myprog
 myprog_OBJECTS = \
 "CMakeFiles/myprog.dir/test.cpp.o" \
 "CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.cpp.o" \
-"CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/Terminal.cpp.o" \
-"CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o" \
-"CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o" \
-"CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o" \
-"CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o"
+"CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/Terminal.cpp.o"
 
 # External object files for target myprog
 myprog_EXTERNAL_OBJECTS =
@@ -183,13 +123,9 @@ myprog_EXTERNAL_OBJECTS =
 myprog: CMakeFiles/myprog.dir/test.cpp.o
 myprog: CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.cpp.o
 myprog: CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/Terminal.cpp.o
-myprog: CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o
-myprog: CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o
-myprog: CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o
-myprog: CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o
 myprog: CMakeFiles/myprog.dir/build.make
 myprog: CMakeFiles/myprog.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable myprog"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable myprog"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myprog.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

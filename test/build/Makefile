@@ -129,102 +129,6 @@ myprog/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/build
 .PHONY : myprog/fast
 
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.o: home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.o
-
-# target to build an object file
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.o
-
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.i: home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.i
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.i
-
-# target to preprocess a source file
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.i
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.i
-
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.s: home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.s
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.s
-
-# target to generate assembly for a file
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.s
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.cpp.s
-
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.o: home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.o
-
-# target to build an object file
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.o
-
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.i: home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.i
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.i
-
-# target to preprocess a source file
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.i
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.i
-
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.s: home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.s
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.s
-
-# target to generate assembly for a file
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.s
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.cpp.s
-
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.o: home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.o
-
-# target to build an object file
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.o
-
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.i: home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.i
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.i
-
-# target to preprocess a source file
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.i
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.i
-
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.s: home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.s
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.s
-
-# target to generate assembly for a file
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.s
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.cpp.s
-
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.o: home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.o
-
-# target to build an object file
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.o
-
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.i: home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.i
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.i
-
-# target to preprocess a source file
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.i
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.i
-
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.s: home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.s
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.s
-
-# target to generate assembly for a file
-home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/myprog.dir/build.make CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.s
-.PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.cpp.s
-
 home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.o: home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.cpp.o
 .PHONY : home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.o
 
@@ -306,18 +210,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... myprog"
-	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.o"
-	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.i"
-	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Container.s"
-	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.o"
-	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.i"
-	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/Frag_and_Ref.s"
-	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.o"
-	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.i"
-	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/FragileContainer.s"
-	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.o"
-	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.i"
-	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Container/RefragedContainer.s"
 	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.o"
 	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.i"
 	@echo "... home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Storage/Storage.s"

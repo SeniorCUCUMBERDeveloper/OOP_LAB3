@@ -164,11 +164,24 @@ CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/Te
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
  /usr/include/c++/14/bits/istream.tcc \
  /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/../Storage/Storage.hpp \
- /usr/include/c++/14/thread /usr/include/c++/14/stop_token \
- /usr/include/c++/14/atomic /usr/include/c++/14/bits/atomic_base.h \
+ /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/../Storage/../Container/I/IContainer.hpp \
+ /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_uninitialized.h \
+ /usr/include/c++/14/bits/stl_vector.h \
+ /usr/include/c++/14/bits/stl_bvector.h \
+ /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/memory \
+ /usr/include/c++/14/bits/stl_tempbuf.h \
+ /usr/include/c++/14/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/14/bits/align.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/14/bits/unique_ptr.h \
+ /usr/include/c++/14/bits/shared_ptr.h \
+ /usr/include/c++/14/bits/shared_ptr_base.h \
+ /usr/include/c++/14/bits/allocated_ptr.h \
+ /usr/include/c++/14/ext/concurrence.h \
+ /usr/include/c++/14/bits/shared_ptr_atomic.h \
+ /usr/include/c++/14/bits/atomic_base.h \
  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
  /usr/include/c++/14/bits/atomic_wait.h /usr/include/c++/14/cstdint \
  /usr/include/c++/14/climits \
@@ -192,8 +205,13 @@ CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/Te
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h \
  /usr/include/c++/14/bits/std_mutex.h \
- /usr/include/c++/14/bits/std_thread.h \
- /usr/include/c++/14/bits/unique_ptr.h /usr/include/c++/14/semaphore \
+ /usr/include/c++/14/backward/auto_ptr.h \
+ /usr/include/c++/14/bits/ranges_uninitialized.h \
+ /usr/include/c++/14/bits/ranges_algobase.h \
+ /usr/include/c++/14/pstl/glue_memory_defs.h \
+ /usr/include/c++/14/pstl/execution_defs.h /usr/include/c++/14/thread \
+ /usr/include/c++/14/stop_token /usr/include/c++/14/atomic \
+ /usr/include/c++/14/bits/std_thread.h /usr/include/c++/14/semaphore \
  /usr/include/c++/14/bits/semaphore_base.h \
  /usr/include/c++/14/bits/chrono.h /usr/include/c++/14/ratio \
  /usr/include/c++/14/limits /usr/include/c++/14/ctime \
@@ -201,40 +219,23 @@ CMakeFiles/myprog.dir/home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/Te
  /usr/include/c++/14/bits/atomic_timed_wait.h \
  /usr/include/c++/14/bits/this_thread_sleep.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_uninitialized.h \
- /usr/include/c++/14/bits/stl_vector.h \
- /usr/include/c++/14/bits/stl_bvector.h \
- /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/list \
- /usr/include/c++/14/bits/stl_list.h \
- /usr/include/c++/14/bits/allocated_ptr.h \
- /usr/include/c++/14/bits/list.tcc /usr/include/c++/14/mutex \
- /usr/include/c++/14/bits/unique_lock.h /usr/include/c++/14/shared_mutex \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h /usr/include/c++/14/list \
+ /usr/include/c++/14/bits/stl_list.h /usr/include/c++/14/bits/list.tcc \
+ /usr/include/c++/14/mutex /usr/include/c++/14/bits/unique_lock.h \
+ /usr/include/c++/14/shared_mutex \
  /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/../Storage/../Octree/Octree.hpp \
  /usr/include/c++/14/algorithm /usr/include/c++/14/bits/stl_algo.h \
  /usr/include/c++/14/bits/algorithmfwd.h \
  /usr/include/c++/14/bits/stl_heap.h \
  /usr/include/c++/14/bits/uniform_int_dist.h \
- /usr/include/c++/14/bits/stl_tempbuf.h \
  /usr/include/c++/14/bits/ranges_algo.h \
- /usr/include/c++/14/bits/ranges_algobase.h \
  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
- /usr/include/c++/14/pstl/execution_defs.h \
  /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/../Storage/../Octree/ContainerPosition.hpp \
  /home/kali/Labs/Lab3OOP-delitel/Lab3OOP-delitel/Terminal/../Storage/../Octree/Point.hpp \
- /usr/include/c++/14/memory \
- /usr/include/c++/14/bits/stl_raw_storage_iter.h \
- /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/shared_ptr.h \
- /usr/include/c++/14/bits/shared_ptr_base.h \
- /usr/include/c++/14/ext/concurrence.h \
- /usr/include/c++/14/bits/shared_ptr_atomic.h \
- /usr/include/c++/14/backward/auto_ptr.h \
- /usr/include/c++/14/bits/ranges_uninitialized.h \
- /usr/include/c++/14/pstl/glue_memory_defs.h /usr/include/c++/14/stack \
- /usr/include/c++/14/deque /usr/include/c++/14/bits/stl_deque.h \
- /usr/include/c++/14/bits/deque.tcc /usr/include/c++/14/bits/stl_stack.h \
- /usr/include/c++/14/regex /usr/include/c++/14/bitset \
- /usr/include/c++/14/locale \
+ /usr/include/c++/14/stack /usr/include/c++/14/deque \
+ /usr/include/c++/14/bits/stl_deque.h /usr/include/c++/14/bits/deque.tcc \
+ /usr/include/c++/14/bits/stl_stack.h /usr/include/c++/14/regex \
+ /usr/include/c++/14/bitset /usr/include/c++/14/locale \
  /usr/include/c++/14/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/messages_members.h \
